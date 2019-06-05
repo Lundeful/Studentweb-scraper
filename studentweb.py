@@ -99,6 +99,9 @@ time.sleep(1) # Let new elements load
 print("// Loading results page")
 driver.get('https://fsweb.no/studentweb/resultater.jsf')
 driver.refresh()
+time.sleep(1) # Load page before clicking radio button to change results view
+driver.find_element_by_xpath( "//*[contains(@id, 'resultatlisteForm:j_idt154:1')]").click()
+time.sleep(1) # Wait and click again to ensure it loads correctly
 driver.find_element_by_xpath( "//*[contains(@id, 'resultatlisteForm:j_idt154:1')]").click()
 time.sleep(1) # Let the new elements load
 
