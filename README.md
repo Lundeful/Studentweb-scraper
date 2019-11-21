@@ -1,5 +1,5 @@
 # Studentweb-scraper
-This is a Python script used to check for updated grades on Studentweb and send the results to your email. 
+This is a Python script used to check for updated grades on Studentweb and send the results to your email. The email also adds a screenshot of the results table to the email. The scripts also has support for partial grades, where you receive one or two grades before the final one. 
 
 **Instructions:**
 
@@ -13,6 +13,8 @@ This is a Python script used to check for updated grades on Studentweb and send 
 3.  Schedule the script to run periodically with crontab
 
 **Dependencies:**
+
+* Chromedriver in your python/Scripts folder or in PATH variable
 
 * selenium
 
